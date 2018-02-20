@@ -13,8 +13,11 @@ export default class VideoPlayer extends React.Component {
           <div className="video-player--video">
             <div className="embed-responsive embed-responsive-16by9">
               <iframe 
+                width="560" height="349"
+                frameBorder="0"
                 className="embed-responsive-item"
                 src={this.props.video ? `https://www.youtube.com/embed/${this.props.video.id.videoId}` : null}
+                autoPlay="1"
               ></iframe>
             </div>
 

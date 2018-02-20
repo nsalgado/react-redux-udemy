@@ -27,6 +27,14 @@ body {
   padding: 0px 10px;
 }
 
+.list-videos {
+  flex: 1;
+}
+
+.video-player-container {
+  width: 100%;
+}
+
 .video-list {
   list-style: none;
   padding: 0;
@@ -35,7 +43,9 @@ body {
 
 .video-list-item {
   display: flex;
-  padding: 5px;
+  padding: 11px;
+  border: 1px solid #ccc;
+  margin-bottom: 14px;
 }
 
 .video-list-item:hover {
@@ -58,6 +68,7 @@ body {
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
+  padding: 0px 20px;
 }
 
 .mini-video-player {
@@ -74,12 +85,17 @@ body {
 
 .embed-responsive {
   height: 100%;
-  width: 100%;
   margin-bottom: 10px;
-  flex: 1;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
 }
 
 .embed-responsive-item {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }
